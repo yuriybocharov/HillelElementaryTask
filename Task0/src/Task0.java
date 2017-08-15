@@ -4,7 +4,7 @@ public class Task0 {
 
     //Калькулятор
 
-    public static void start() {
+    private static void start() {
 
         Scanner scanner = new Scanner (System.in);
         System.out.println ();
@@ -85,7 +85,7 @@ public class Task0 {
     }
 
     public static void main(String[] args) {
-        Task0.start ();
+        start ();
     }
 }
 
