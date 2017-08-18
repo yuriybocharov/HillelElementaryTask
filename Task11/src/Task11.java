@@ -12,14 +12,14 @@ public class Task11 {
         if (number1 == 1) {
             x1 = (int) number / 1_000;
             x2 = (int) (number - x1 * 1_000);
-            x3 = (int) ((number - x1 * 1_000 - x2) * 1000 + 1);
+            x3 = (int) ((number - x1 * 1_000 - x2) * 1000);
         }
 
         if (number1 == 2) {
             x1 = (int) number / 1_000_000;
             x2 = (int) (number - x1 * 1_000_000) / 1000;
             x3 = (int) (number - x1 * 1_000_000 - x2 * 1000);
-            x4 = (int) ((number - x1 * 1_000_000 - x2 * 1000 - x3) * 1000 + 1);
+            x4 = (int) ((number - x1 * 1_000_000 - x2 * 1000 - x3) * 1000);
         }
 
         if (x1 > 0) {

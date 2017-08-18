@@ -2,8 +2,8 @@ public class Task14 {
 
     public static void main(String[] args) {
 
-        int[][] mass = new int[5][10];
-        int[][] mass1 = new int[1][5];
+        int[][] mass = new int[10][10];
+        int[][] mass1 = new int[1][10];
         int temp;
 
         double d = 0;

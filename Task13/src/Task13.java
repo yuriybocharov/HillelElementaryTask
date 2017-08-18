@@ -1,6 +1,6 @@
 
 public class Task13 {
-    static int summ(int[][] mass)
+    private static int summ(int[][] mass)
     {
         int summ =0;
 
@@ -12,7 +12,7 @@ public class Task13 {
         return summ;
     }
 
-    static double average(int[][] mass)
+    private static double average(int[][] mass)
     {
         double  count = 0;
         for (int i = 0; i < 10; i++) {
@@ -25,7 +25,7 @@ public class Task13 {
     }
 
 
-    static int min (int[][] mass)
+    private static int min (int[][] mass)
     {
         int  min = mass[0][0];
         for (int i = 0; i < 10; i++) {
@@ -37,7 +37,7 @@ public class Task13 {
         return min;
     }
 
-    static int max (int[][] mass)
+    private static int max (int[][] mass)
     {
         int  max = mass[0][0];
         for (int i = 0; i < 10; i++) {
@@ -49,7 +49,7 @@ public class Task13 {
         return max;
     }
 
-    static int NumberOfPositiveElements (int[][] mass)
+    private static int NumberOfPositiveElements (int[][] mass)
     {
         int  count = 0;
         for (int i = 0; i < 10; i++) {
@@ -60,7 +60,7 @@ public class Task13 {
         return count;
     }
 
-    static void  AmountPerLine (int[][] mass)
+    private static void  AmountPerLine (int[][] mass)
     {
         int  summ = 0;
         for (int i = 0; i < 10; i++) {
