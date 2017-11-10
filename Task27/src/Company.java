@@ -42,7 +42,7 @@ public class Company {
         
     }
 
-    void showMiddleAgePerson(List<Person> list) {
+    void showMiddleAgePersonA(List<Person> list) {
         System.out.println ();
         for (int i = 0; i < list.size (); i++) {
             if (list.get (i).getAge () > 25 && list.get (i).getAge () < 45){
@@ -50,12 +50,14 @@ public class Company {
             }
 
         }
+        void showMiddleAgePersonB(List<Person> list) {
         System.out.println ();
         list.stream ()
                 .filter (person -> person.getAge () > 25)
                 .filter (person -> person.getAge () < 45)
                 .forEach (System.out::println);
 
+    }
     }
 
     void showPersonStartsNameWithA(Stream<Person> stream) {
