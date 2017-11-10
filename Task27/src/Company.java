@@ -39,6 +39,7 @@ public class Company {
             nameList.remove(n);
             this.personList.add(new Person(name, ageRandom));
         }
+        
     }
 
     void showMiddleAgePerson(List<Person> list) {
