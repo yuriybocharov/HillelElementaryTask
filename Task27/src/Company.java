@@ -42,7 +42,7 @@ public class Company {
         
     }
 
-    void showMiddleAgePersonA(List<Person> list) {
+    void showMiddleAgePersonA(List<Person> list) { // обычный способ
         System.out.println ();
         for (int i = 0; i < list.size (); i++) {
             if (list.get (i).getAge () > 25 && list.get (i).getAge () < 45){
@@ -50,7 +50,7 @@ public class Company {
             }
 
         }
-        void showMiddleAgePersonB(List<Person> list) {
+        void showMiddleAgePersonB(List<Person> list) { // лямбда способ
         System.out.println ();
         list.stream ()
                 .filter (person -> person.getAge () > 25)
@@ -60,14 +60,14 @@ public class Company {
     }
     }
 
-    void showPersonStartsNameWithA(Stream<Person> stream) {
+    void showPersonStartsNameWithA(Stream<Person> stream) { // лямбда способ
         System.out.println ();
         stream
                 .filter (person -> person.getName ()
                         .startsWith ("А")).forEach (System.out::println);
 
     }
-    void showPersonStartsNameWithAList(List<Person> list) {
+    void showPersonStartsNameWithAList(List<Person> list) { // обычный способ
         char [] mass;
         System.out.println ();
         for (Person person : list) {
