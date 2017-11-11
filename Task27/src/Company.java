@@ -45,7 +45,7 @@ public class Company {
         System.out.println ();
         for (int i = 0; i < list.size (); i++) {
             if (list.get (i).getAge () > 25 && list.get (i).getAge () < 45){
-                System.out.println (list.get (i).getName () + list.get (i).getAge ());
+                System.out.println (list.get (i).toString ());
             }
 
         }
