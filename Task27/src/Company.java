@@ -59,7 +59,7 @@ public class Company {
                 .forEach (System.out::println);
 
     }
-    
+
 
     void showPersonStartsNameWithA(Stream<Person> stream) { // лямбда способ
         System.out.println ();

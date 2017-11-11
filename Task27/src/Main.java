@@ -10,7 +10,8 @@ public class Main {
         Company company = new Company ();
         company.addName ();
         company.addPerson ();
-        company.showMiddleAgePerson (company.personList);
+        company.showMiddleAgePersonA(company.personList);
+        company.showMiddleAgePersonB(company.personList);
         company.showPersonStartsNameWithA (company.personList.stream ());
         company.showPersonStartsNameWithAList (company.personList);
     }
