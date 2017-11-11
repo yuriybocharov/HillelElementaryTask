@@ -45,11 +45,12 @@ public class Company {
     void showMiddleAgePersonA(List<Person> list) { // обычный способ
         System.out.println ();
         for (int i = 0; i < list.size (); i++) {
-            if (list.get (i).getAge () > 25 && list.get (i).getAge () < 45){
+            if (list.get (i).getAge () > 25 && list.get (i).getAge () < 45) {
                 System.out.println (list.get (i).toString ());
             }
 
         }
+    }
         void showMiddleAgePersonB(List<Person> list) { // лямбда способ
         System.out.println ();
         list.stream ()
@@ -58,7 +59,7 @@ public class Company {
                 .forEach (System.out::println);
 
     }
-    }
+    
 
     void showPersonStartsNameWithA(Stream<Person> stream) { // лямбда способ
         System.out.println ();
